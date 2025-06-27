@@ -1,0 +1,206 @@
+/* General Styling */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #1d1d1d;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.question {
+    font-size: 1.5em;
+    color: #343a40;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.answers {
+    list-style-type: none;
+    padding: 0;
+}
+
+.answer {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    font-size: 1.2em;
+}
+
+.answer:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.correct {
+    background-color: #17a2b8; /* Teal for correct answers */
+}
+
+.incorrect {
+    background-color: #dc3545; /* Red for incorrect answers */
+}
+
+button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.85em;
+    color: #999;
+}
+
+/* Quiz Section */
+.quiz-section {
+    margin-top: 20px;
+}
+
+#nextButton, #quitButton {
+    width: 48%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#quitButton {
+    background-color: #dc3545; /* Red for quit button */
+}
+
+#quitButton:hover {
+    background-color: #c82333;
+}
+
+#nextButton {
+    background-color: #28a745; /* Green for next button */
+}
+
+#nextButton:hover {
+    background-color: #218838;
+}
+
+/* Result Section */
+.result-section {
+    text-align: center;
+}
+
+#score {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Next Level Prompt Section */
+#nextLevelPrompt {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#yesButton, #noButton {
+    width: 48%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#yesButton {
+    background-color: #28a745; /* Green for yes button */
+}
+
+#noButton {
+    background-color: #dc3545; /* Red for no button */
+}
+
+#yesButton:hover {
+    background-color: #218838;
+}
+
+#noButton:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 18px;
+    }
+
+    #nextButton, #quitButton, #yesButton, #noButton {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Enhanced Start Page Styling */
+.start-page {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #007bff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.start-page h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.start-page p {
+    font-size: 1.2em;
+    color: #dcdfe1;
+    margin-bottom: 30px;
+}
+
+.start-page button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+.start-page button:hover {
+    background-color: #218838;
+}

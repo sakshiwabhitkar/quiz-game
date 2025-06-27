@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Quiz Game</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Start Quiz Page -->
+        <section id="startPage" class="start-page">
+            <header>
+                <h1>Welcome to the Interactive Quiz Game</h1>
+                <p>Test your knowledge and have fun!</p>
+            </header>
+            <button id="startButton" class="btn">Start Quiz</button>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="quiz-section hidden">
+            <div class="question"></div>
+            <ul class="answers"></ul>
+            <button id="nextButton" class="btn hidden">Next Question</button>
+            <button id="quitButton" class="btn hidden">Quit Quiz</button>
+        </section>
+
+        <!-- Result Section -->
+        <section id="result" class="result-section hidden">
+            <h2>Your Score: <span id="score"></span></h2>
+            <p>Well done, you've completed the quiz!</p>
+            <button id="restartButton" class="btn">Restart Quiz</button>
+        </section>
+
+        <section id="nextLevelPrompt" class="hidden">
+            <p>Do you want to proceed to the next level?</p>
+            <button id="yesButton" class="btn">Yes</button>
+            <button id="noButton" class="btn">No</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
